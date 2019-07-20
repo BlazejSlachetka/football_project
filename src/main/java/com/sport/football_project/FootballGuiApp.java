@@ -11,16 +11,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class FootballGuiApp extends VerticalLayout {
 
 @Autowired
-    public FootballGuiApp (FootballClient footballClient){
+    public FootballGuiApp (FootballClient footballClient, FiltersClient filtersClient){
 
     Football football = footballClient.getFootballFormApi();
 
-    Label labelFootball = new Label(footballClient.getFootballFormApi().getFilters().getDateFrom());
+    Label labelFootball = new Label(footballClient.getFootballFormApi().getMatches().toString());
     add(labelFootball);
-
-    System.out.println("");
-
-
 
 }
 
