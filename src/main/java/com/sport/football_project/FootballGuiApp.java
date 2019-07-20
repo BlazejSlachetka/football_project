@@ -6,8 +6,6 @@ import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-import java.awt.*;
-
 @Route("football")
 public class FootballGuiApp {
 
@@ -17,6 +15,7 @@ public class FootballGuiApp {
     Football football = footballClient.getFootballFormApi();
 
     Label labelFootball = new Label(footballClient.getFootballFormApi().getFilters().getDateFrom());
+
 
 }
 
