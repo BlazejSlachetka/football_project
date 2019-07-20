@@ -19,7 +19,6 @@ public class FootballClient {
         return exchange.getBody();
 
 
-
     }
 }
 

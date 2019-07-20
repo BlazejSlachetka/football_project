@@ -16,6 +16,9 @@ public class FootballGuiApp {
 
     Label labelFootball = new Label(footballClient.getFootballFormApi().getFilters().getDateFrom());
 
+    System.out.println("");
+
+
 
 }
 

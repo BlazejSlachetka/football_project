@@ -8,6 +8,7 @@ public class FootballProjectApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(FootballProjectApplication.class, args);
+
     }
 
 }

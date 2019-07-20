@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth
     @Configuration
     @EnableOAuth2Sso
     public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
         @Override
         protected void configure(HttpSecurity http) throws Exception {
             http.authorizeRequests()
