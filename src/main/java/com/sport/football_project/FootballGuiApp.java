@@ -2,27 +2,23 @@ package com.sport.football_project;
 
 
 import com.vaadin.flow.component.html.Label;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
 @Route("football")
-public class FootballGuiApp extends VerticalLayout {
+public class FootballGuiApp {
+
 
 @Autowired
-    public FootballGuiApp (FootballClient footballClient, FiltersClient filtersClient){
+    public FootballGuiApp (FootballClient footballClient){
 
     Football football = footballClient.getFootballFormApi();
 
-    Label textLabel = new Label("TO JEST FOOTBALL");
-    add(textLabel);
+    Label labelFootball = new Label(footballClient.getFootballFormApi().getFilters().getDateFrom());
 
-    Label labelFootball = new Label(footballClient.getFootballFormApi().getCount().toString());
-    add(labelFootball);
 
 }
-
 
 
 }
