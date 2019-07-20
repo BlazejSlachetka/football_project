@@ -15,7 +15,10 @@ public class FootballGuiApp extends VerticalLayout {
 
     Football football = footballClient.getFootballFormApi();
 
-    Label labelFootball = new Label(footballClient.getFootballFormApi().getMatches().toString());
+    Label textLabel = new Label("TO JEST FOOTBALL");
+    add(textLabel);
+
+    Label labelFootball = new Label(footballClient.getFootballFormApi().getCount().toString());
     add(labelFootball);
 
 }
