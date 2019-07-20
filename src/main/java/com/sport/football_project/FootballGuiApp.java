@@ -16,12 +16,14 @@ public class FootballGuiApp extends VerticalLayout {
     Football football = footballClient.getFootballFormApi();
 
     Label labelFootball = new Label(footballClient.getFootballFormApi().getFilters().getDateFrom());
+    add(labelFootball);
 
     System.out.println("");
 
 
 
 }
+
 
 
 }

@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth
         @Override
         protected void configure(HttpSecurity http) throws Exception {
             http.authorizeRequests()
-                    .antMatchers("/football").authenticated()
+                    .antMatchers("/football").permitAll()
                     .antMatchers("/hello").permitAll()
                     .and()
                     .csrf().disable();
