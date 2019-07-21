@@ -1,9 +1,8 @@
 package com.sport.football_project.clients;
 
 
-import com.sport.football_project.clients.FiltersClient;
-import com.sport.football_project.clients.FootballClient;
 import com.sport.football_project.model.football.Football;
+import com.sport.football_project.model.matches.Matches;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
@@ -14,15 +13,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class FootballGuiApp extends VerticalLayout {
 
 @Autowired
-    public FootballGuiApp (FootballClient footballClient, FiltersClient filtersClient){
+    public FootballGuiApp (MatchesClient matchesClient){
 
-    Football football = footballClient.getFootballFormApi();
-
+    Matches matches = matchesClient.getMatchesFormFormApi();
     Label textLabel = new Label("TO JEST FOOTBALL");
     add(textLabel);
 
-    Label labelFootball = new Label("10");
-    add(labelFootball);
+    Label labelMatches = new Label(matchesClient.getMatchesFormFormApi().getGroup());
+    add(labelMatches);
 
 }
 
