@@ -1,7 +1,5 @@
-package com.sport.football_project.common;
+package com.sport.football_project.model.competitions;
 
-import com.sport.football_project.model.competitions.Area;
-import com.sport.football_project.model.competitions.Season;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -16,7 +14,7 @@ public class Competition {
     String plan;
     Season currentSeason;
     Long numberOfAvailableSeasons;
-    String lastUpdate;
+    LocalDateTime lastUpdate;
 
 
 }

@@ -27,5 +27,4 @@ public class FootballGuiApp extends VerticalLayout {
 }
 
 
-
 }
