@@ -2,8 +2,6 @@ package com.sport.football_project.model.competitions;
 
 import lombok.Data;
 
-import java.time.LocalDateTime;
-
 @Data
 public class Competition {
 
@@ -14,7 +12,9 @@ public class Competition {
     String plan;
     Season currentSeason;
     Long numberOfAvailableSeasons;
-    LocalDateTime lastUpdate;
+    String lastUpdated;
+    String emblemUrl;
+
 
 
 }
