@@ -14,7 +14,7 @@ public class MatchesClient {
     public Matches getMatchesFormFormApi() {
         RestTemplate restTemplate = new RestTemplate();
 
-        ResponseEntity<Matches> exchange = restTemplate.exchange("http://api.football-data.org/v2/matches ",
+        ResponseEntity<Matches> exchange = restTemplate.exchange("http://api.football-data.org/v2/competitions/2003/matches?matchday=1",
                 HttpMethod.GET,
                 HttpEntity.EMPTY,
                 Matches.class);
