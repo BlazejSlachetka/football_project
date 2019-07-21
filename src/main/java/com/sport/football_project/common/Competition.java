@@ -1,5 +1,7 @@
-package com.sport.football_project.model.competitions;
+package com.sport.football_project.common;
 
+import com.sport.football_project.model.competitions.Area;
+import com.sport.football_project.model.competitions.Season;
 import lombok.Data;
 
 import java.time.LocalDateTime;
