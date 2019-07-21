@@ -1,4 +1,6 @@
 package com.sport.football_project.model.competitions;
+
+import com.sport.football_project.model.common.Competition;
 import lombok.Data;
 
 import java.util.List;
@@ -9,6 +11,6 @@ public class Competitions {
 
     Integer count;
     Map filters;
-    List<Competitions> competitions;
+    List<Competition> competitions;
 
 }
