@@ -26,10 +26,10 @@ public class FootballGuiApp extends VerticalLayout {
 
 
     Label filterLabel = new Label(filtersClient.getFiltersFormApi().getDateTo());
-    addListener(filterLabel);
+    add(filterLabel);
 
     Label filterLabel2 = new Label(filtersClient.getFiltersFormApi().getDateFrom());
-    addListener(filterLabel2);
+    add(filterLabel2);
 
     Label matchesLabel =  new Label(matchesClient.getMatchesFormFormApi().getGroup());
     add(matchesLabel);
