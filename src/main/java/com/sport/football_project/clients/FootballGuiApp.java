@@ -3,6 +3,7 @@ package com.sport.football_project.clients;
 
 import com.sport.football_project.model.football.Football;
 import com.sport.football_project.model.matches.Matches;
+import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
@@ -20,8 +21,8 @@ public class FootballGuiApp extends VerticalLayout {
     Label textLabel = new Label("TO JEST FOOTBALL");
     add(textLabel);
 
-    Label labelMatches = new Label(matches.getGroup());
-    add(labelMatches);
+    Text textMatches = new Text(matches.getGroup());
+    add(textMatches);
 
 }
 
