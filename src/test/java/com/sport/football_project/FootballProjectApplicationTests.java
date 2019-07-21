@@ -2,6 +2,7 @@ package com.sport.football_project;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sport.football_project.model.competitions.Competitions;
+import com.sport.football_project.model.matches.Matches;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -67,5 +68,16 @@ public class FootballProjectApplicationTests {
                 "        }\n" +
                 "\t\t]}";
     }
+    @Test
+    public void shouldDeserializeCorrectlyOne() throws IOException {
+        //given
+        String jsonToDeserialize = getJson();
+        //when
+        Matches matches = mapper.readValue(jsonToDeserialize, Matches.class);
+        //then
+        assertEquals( new Integer(2), matches.getScore());
+    }
+
+
 
 }

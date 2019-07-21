@@ -1,5 +1,4 @@
 package com.sport.football_project.model.competitions;
-
 import com.sport.football_project.model.common.Competition;
 import lombok.Data;
 
