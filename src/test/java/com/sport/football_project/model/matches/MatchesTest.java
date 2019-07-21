@@ -17,7 +17,7 @@ public class MatchesTest {
         //when
         Matches matches = mapper.readValue(jsonToDeserialize, Matches.class);
         //then
-        assertEquals(new Integer(1), matches.getCount());
+        assertEquals(new Long(10), matches.getCount());
     }
 
     private String getJson() {

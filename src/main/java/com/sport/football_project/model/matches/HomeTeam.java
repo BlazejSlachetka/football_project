@@ -11,7 +11,7 @@ public class HomeTeam {
     Coach coach;
     Captain captain;
     List<Lineup> lineup;
-    List<Bench> benches;
+    List<Bench> bench;
 
 
 }

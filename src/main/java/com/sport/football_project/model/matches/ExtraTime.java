@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class ExtraTime {
-    Long homeTime;
-    Long awayTime;
+    Long homeTeam;
+    Long awayTeam;
 
 }

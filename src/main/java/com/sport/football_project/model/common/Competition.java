@@ -18,4 +18,5 @@ public class Competition {
     String emblemUrl;
 
 
+
 }
