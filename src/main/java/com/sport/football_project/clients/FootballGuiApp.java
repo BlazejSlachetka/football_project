@@ -1,6 +1,9 @@
-package com.sport.football_project;
+package com.sport.football_project.clients;
 
 
+import com.sport.football_project.clients.FiltersClient;
+import com.sport.football_project.clients.FootballClient;
+import com.sport.football_project.model.football.Football;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
