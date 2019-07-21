@@ -1,4 +1,4 @@
-package com.sport.football_project;
+package com.sport.football_project.model.football;
 
 import java.util.HashMap;
 import java.util.List;
