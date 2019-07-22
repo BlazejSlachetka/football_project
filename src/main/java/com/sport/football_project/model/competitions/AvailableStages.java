@@ -5,5 +5,6 @@ import java.util.Map;
 
 public enum AvailableStages {
 
-    GROUP_STAGE;
+    GROUP_STAGE,REGULAR_SEASON;
+
 }
