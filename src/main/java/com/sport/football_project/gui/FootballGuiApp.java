@@ -2,7 +2,10 @@ package com.sport.football_project.gui;
 
 import com.sport.football_project.clients.*;
 import com.sport.football_project.common.*;
+import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
@@ -20,10 +23,10 @@ public class FootballGuiApp extends VerticalLayout {
                           TeamsClient teamsClient,
                           PlayersClient playersClient) {
 
-       // Matches matches = matchesClient.getMatchesFormFormApi();
-       // Areas areas = areasClient.getAreasFormFormApi();
-       // Players players = playersClient.getPlayersFormFormApi();
-       // Teams teams = teamsClient.getTeamsFormFormApi();
+        // Matches matches = matchesClient.getMatchesFormFormApi();
+        // Areas areas = areasClient.getAreasFormFormApi();
+        // Players players = playersClient.getPlayersFormFormApi();
+        String teams;
         // Competitions competitions = competitionsClient.getCompetitionsFormFormApi();
 
 
@@ -31,11 +34,12 @@ public class FootballGuiApp extends VerticalLayout {
         add(label);
         TextField textField = new TextField("Klub");
         add(textField);
-
-       // label.setText("Klub" + textField.equals(teamsClient));
-
-
-
+        Button buttonOK = new Button(new Icon(VaadinIcon.ACADEMY_CAP));
+        add(buttonOK);
+        buttonOK.addClickListener(click -> {
+            Label labelTeam = new Label(teamsClient.getTeamsFormFormApi().toString());
+            add(labelTeam);
+        });
 
 
     }
