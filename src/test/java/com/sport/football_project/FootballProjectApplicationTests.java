@@ -1,7 +1,7 @@
 package com.sport.football_project;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sport.football_project.model.competitions.Competitions;
+import com.sport.football_project.common.Competitions;
 import org.junit.Test;
 
 import java.io.IOException;

@@ -1,19 +1,20 @@
-package com.sport.football_project.model.leagueTable;
+package com.sport.football_project.common;
 
 import com.sport.football_project.model.competitions.Competition;
 import com.sport.football_project.model.matches.Season;
 import com.sport.football_project.model.filters.Filters;
+import com.sport.football_project.model.teams.Team;
 import lombok.Data;
 
-import java.util.List;
+import java.util.ArrayList;
 
 @Data
-public class LeagueTable {
+public class Teams {
 
+    Long count;
     Filters filters;
     Competition competition;
     Season season;
-    List <Standings> standings;
-
+    ArrayList<Team> teams;
 
 }

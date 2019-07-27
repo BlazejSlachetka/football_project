@@ -1,7 +1,7 @@
-package com.sport.football_project.model.common;
+package com.sport.football_project.model.competitions;
 
-import com.sport.football_project.model.competitions.Area;
-import com.sport.football_project.model.competitions.Season;
+import com.sport.football_project.model.areas.Area;
+import com.sport.football_project.model.matches.Season;
 import lombok.Data;
 
 @Data
@@ -12,7 +12,7 @@ public class Competition {
     String name;
     String code;
     String plan;
-    Season currentSeason;
+    CurrentSeason currentSeason;
     Long numberOfAvailableSeasons;
     String lastUpdated;
     String emblemUrl;

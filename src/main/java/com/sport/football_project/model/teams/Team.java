@@ -1,7 +1,10 @@
-package com.sport.football_project.model.matches;
+package com.sport.football_project.model.teams;
 
-import com.sport.football_project.model.competitions.Area;
+import com.sport.football_project.model.areas.Area;
+import com.sport.football_project.model.matches.Squad;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 public class Team {
@@ -19,6 +22,7 @@ public class Team {
     Long founded;
     String clubColors;
     String venue;
+    List<Squad> squad;
     String lastUpdated;
 
 }

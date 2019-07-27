@@ -11,7 +11,7 @@ public class Standings {
     String stage;
     String type;
     String group;
-    String []table = new String[]{,};
+    List<TableStandings>table;
 
 
 }

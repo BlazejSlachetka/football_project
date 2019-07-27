@@ -1,6 +1,6 @@
 package com.sport.football_project.model.leagueTable;
 
-import com.sport.football_project.model.matches.Team;
+import com.sport.football_project.model.teams.Team;
 import lombok.Data;
 
 @Data

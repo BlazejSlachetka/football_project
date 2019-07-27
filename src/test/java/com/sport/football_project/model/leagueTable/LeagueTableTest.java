@@ -1,7 +1,6 @@
 package com.sport.football_project.model.leagueTable;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sport.football_project.model.teams.Teams;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -19,7 +18,7 @@ public class LeagueTableTest {
         //when
         LeagueTable leagueTable = mapper.readValue(jsonToDeserialize, LeagueTable.class);
         //then
-        assertEquals(new String("TOTAL"), leagueTable.getStandings());
+        assertEquals(new Long(2021), leagueTable.getCompetition().getId());
     }
 
     private String getJson() {
@@ -372,7 +371,7 @@ public class LeagueTableTest {
                 "                    \"goalDifference\": -8\n" +
                 "                }\n" +
                 "            ]\n" +
-                "        },\n";
+                "        }]}}\n";
     }
 
 }

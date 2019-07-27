@@ -1,5 +1,6 @@
 package com.sport.football_project.model.teams;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sport.football_project.common.Teams;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -62,7 +63,7 @@ public class TeamsTest {
                 "\t\t\"venue\": \"Guangxi Sports Centre Stadium\",\n" +
                 "\t\t\"lastUpdated\": \"2018-06-07T12:17:29Z\"\n" +
                 "\t}]\n" +
-                "}";
+                "}]}}";
     }
 
 }

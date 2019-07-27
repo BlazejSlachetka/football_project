@@ -1,5 +1,6 @@
-package com.sport.football_project.model.competitions;
+package com.sport.football_project.model.matches;
 
+import com.sport.football_project.model.competitions.AvailableStages;
 import lombok.Data;
 
 import java.lang.reflect.Array;
