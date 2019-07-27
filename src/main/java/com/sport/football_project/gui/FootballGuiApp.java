@@ -8,8 +8,6 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 
-;import java.awt.*;
-
 
 @Route("football")
 public class FootballGuiApp extends VerticalLayout {
@@ -22,18 +20,19 @@ public class FootballGuiApp extends VerticalLayout {
                           TeamsClient teamsClient,
                           PlayersClient playersClient) {
 
-        Matches matches = matchesClient.getMatchesFormFormApi();
-        Areas areas = areasClient.getAreasFormFormApi();
-        Players players = playersClient.getPlayersFormFormApi();
-        Teams teams = teamsClient.getTeamsFormFormApi();
-        Competitions competitions = competitionsClient.getCompetitionsFormFormApi();
-        ;
+       // Matches matches = matchesClient.getMatchesFormFormApi();
+       // Areas areas = areasClient.getAreasFormFormApi();
+       // Players players = playersClient.getPlayersFormFormApi();
+       // Teams teams = teamsClient.getTeamsFormFormApi();
+        // Competitions competitions = competitionsClient.getCompetitionsFormFormApi();
+
+
         Label label = new Label("Podaj Nazwę Klubu");
         add(label);
-        TextField textField = new TextField();
+        TextField textField = new TextField("Klub");
         add(textField);
 
-        label.setText("Klub" + textField.equals(teamsClient));
+       // label.setText("Klub" + textField.equals(teamsClient));
 
 
 
