@@ -19,7 +19,7 @@ public class MatchesClient {
                 Matches.class);
         return exchange.getBody();
 
-
     }
+
 }
 
