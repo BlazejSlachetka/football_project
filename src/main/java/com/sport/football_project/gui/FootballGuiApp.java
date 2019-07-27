@@ -1,7 +1,6 @@
 package com.sport.football_project.gui;
 
 import com.sport.football_project.clients.*;
-import com.sport.football_project.common.*;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.icon.Icon;
@@ -36,11 +35,15 @@ public class FootballGuiApp extends VerticalLayout {
         add(textField);
         Button buttonOK = new Button(new Icon(VaadinIcon.ACADEMY_CAP));
         add(buttonOK);
+
+       // Label labelTeam = new Label(teamsClient.getTeamsFormFormApi().toString());
+       // add(labelTeam);
+
         buttonOK.addClickListener(click -> {
             Label labelTeam = new Label(teamsClient.getTeamsFormFormApi().toString());
             add(labelTeam);
+            labelTeam.setText("Klub" + textField);
         });
-
 
     }
 }

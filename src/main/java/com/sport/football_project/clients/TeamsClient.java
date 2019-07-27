@@ -1,4 +1,5 @@
 package com.sport.football_project.clients;
+
 import com.sport.football_project.common.Teams;
 import com.sport.football_project.model.teams.Team;
 import org.springframework.http.HttpEntity;
@@ -17,15 +18,19 @@ public class TeamsClient {
 
         ResponseEntity<Teams> exchangeTeam;
 
-                while(true) {
-                exchangeTeam
-                =restTemplate.exchange("http://api.football-data.org/v2/teams",
-                            HttpMethod.GET,
-                            HttpEntity.EMPTY,
-                            Teams.class);
-                if(exchangeTeam.getBody().getTeams().toString().startsWith(""))
-                    return exchangeTeam.getBody().getTeams();
-                }
+        while (true) {
+            exchangeTeam
+                    = restTemplate.exchange("http://api.football-data.org/v2/teams",
+                    HttpMethod.GET,
+                    HttpEntity.EMPTY,
+                    Teams.class);
+            if
+            (exchangeTeam.getBody().getTeams().toString().startsWith("")) {
+                return exchangeTeam.getBody().getTeams();
+            } else {
+                return null;
+            }
+        }
 
     }
 
